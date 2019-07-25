@@ -1,8 +1,6 @@
 # Simple Countdown WebApp
 
-## Countdown.js
-
-
+## countdown.js
 ```js
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 21, 2021 00:00:00").getTime();
@@ -32,4 +30,31 @@ var x = setInterval(function() {
         document.getElementById("display").innerHTML = "EXPIRED";
     }
 }, 1000);
+```
+## index.html
+```html
+<html>
+<head>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+  <h1>Countdown</h1>
+
+  <!-- Element where text will be updated --> 
+  <p id="display"></p>
+  
+  <h2>Remaining</h2>
+  
+  <!-- Include JS Script -->
+  <script type="text/javascript" src="js/countdown.js"</script>
+</body>
+</html>
 ```
